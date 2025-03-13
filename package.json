@@ -3,6 +3,10 @@
     "displayName": "Enumerator",
     "description": "Fill cursors with enumeration",
     "version": "0.0.1",
+    "repository": {
+        "type": "github",
+        "url": "https://github.com/devprodest/vscode-enumerator.git"
+    },
     "engines": {
         "vscode": "^1.85.0"
     },
