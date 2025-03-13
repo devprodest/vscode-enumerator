@@ -1,0 +1,52 @@
+{
+    "name": "enumerator",
+    "displayName": "Enumerator",
+    "description": "Fill cursors with enumeration",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Formatters",
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "enumerator.fill-enum-dec",
+                "title": "Insert dec enumeration"
+            },
+            {
+                "command": "enumerator.fill-enum-dec-padded",
+                "title": "Insert zero-padded dec enumeration"
+            },
+            {
+                "command": "enumerator.fill-enum-hex",
+                "title": "Insert hex enumeration"
+            }
+        ]
+    },
+    "scripts": {
+        "compile": "npm run check-types && node esbuild.js",
+        "check-types": "tsc --noEmit",
+        "watch": "npm-run-all -p watch:*",
+        "watch:esbuild": "node esbuild.js --watch",
+        "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+        "vscode:prepublish": "npm run package",
+        "package": "npm run check-types && node esbuild.js --production"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.2",
+        "@types/node": "^22.9",
+        "@types/vscode": "^1.85.0",
+        "@typescript-eslint/eslint-plugin": "^8.6.0",
+        "@typescript-eslint/parser": "^8.6.0",
+        "@vscode/test-electron": "^2.3.4",
+        "esbuild": "^0.25.1",
+        "eslint": "^9.22.0",
+        "mocha": "^10.2.0",
+        "typescript": "^5.2.2"
+    }
+}
