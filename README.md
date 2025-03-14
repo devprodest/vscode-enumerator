@@ -1,4 +1,6 @@
-# enumerator
+# ENUMERATOR
+
+![alt text](img/icon128.png)
 
 Plugin for inserting enumerated values ​​in multi-cursor mode
 
@@ -10,6 +12,10 @@ A generalized command with template input is called by pressing `CTRL+ALT+E` or 
 The template allows you to set the number format, the starting point, and the increment step.
 
 Also for all formats there are separate commands with start = 0 and step = 1.
+
+*The code in the video is just an example of using the plugin, and is not working. Yes, I know that there is an array out of bounds. This is just an example!*
+
+![example](img/example.gif)
 
 ## Data Format
 

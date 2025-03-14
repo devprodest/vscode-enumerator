@@ -35,15 +35,17 @@ export function insertEnum(textEditor: vscode.TextEditor, format: FormatDigit, s
 export async function insertEnumEx(textEditor: vscode.TextEditor) {
 
 	let IBoxOptions: vscode.InputBoxOptions = {
-		prompt: '1|01|x1',
-		placeHolder: '01 1',
-		password: false
+		prompt: '[0|x]<start> [<step>]',
+		placeHolder: '0',
+		password: false,
+		title: "Enter a pattern for the sequence"
 	};
 
-	const inputPattern = await vscode.window.showInputBox(IBoxOptions);
+	let inputPattern = await vscode.window.showInputBox(IBoxOptions);
 	if (!inputPattern || inputPattern == "") {
-		return;
+		inputPattern = "0"
 	}
+	
 	if (inputPattern.length > 1) {
 		const inputformat = inputPattern.match(/^([a,x,0]?)([\da-f]*)\ *([\da-f]*)/);
 

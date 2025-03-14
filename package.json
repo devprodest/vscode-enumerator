@@ -4,7 +4,7 @@
     "description": "Fill cursors with enumeration",
     "publisher": "ZaikinDenis",
     "license": "MIT",
-    "icon": "icon.png",
+    "icon": "img/icon.png",
     "repository": {
         "type": "github",
         "url": "https://github.com/devprodest/vscode-enumerator"
