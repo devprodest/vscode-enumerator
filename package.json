@@ -2,33 +2,60 @@
     "name": "enumerator",
     "displayName": "Enumerator",
     "description": "Fill cursors with enumeration",
-    "version": "0.0.1",
+    "publisher": "ZaikinDenis",
+    "license": "MIT",
+    "icon": "icon.png",
     "repository": {
         "type": "github",
-        "url": "https://github.com/devprodest/vscode-enumerator.git"
+        "url": "https://github.com/devprodest/vscode-enumerator"
     },
-    "engines": {
-        "vscode": "^1.85.0"
+    "bugs": {
+        "url": "https://github.com/devprodest/vscode-enumerator/issues"
     },
     "categories": [
         "Formatters",
         "Other"
     ],
-    "activationEvents": [],
+    "keywords": [
+        "enumerate",
+        "enumerator",
+        "enum",
+        "sequence",
+        "text pastry",
+        "text-pastry",
+        "text",
+        "pastry"
+    ],
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
     "main": "./out/extension.js",
     "contributes": {
         "commands": [
             {
                 "command": "enumerator.fill-enum-dec",
-                "title": "Insert dec enumeration"
+                "title": "ENUMERATOR: Insert dec values"
             },
             {
                 "command": "enumerator.fill-enum-dec-padded",
-                "title": "Insert zero-padded dec enumeration"
+                "title": "ENUMERATOR: Insert zero-padded dec values"
             },
             {
                 "command": "enumerator.fill-enum-hex",
-                "title": "Insert hex enumeration"
+                "title": "ENUMERATOR: Insert hex values"
+            },
+            {
+                "command": "enumerator.fill-enum-ex",
+                "title": "ENUMERATOR: Insert by format"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "enumerator.fill-enum-ex",
+                "key": "ctrl+alt+e",
+                "mac": "cmd+alt+e",
+                "when": "editorTextFocus"
             }
         ]
     },
