@@ -1,6 +1,6 @@
 {
     "name": "vscode-enumerator",
-    "displayName": "Enumerator",
+    "displayName": "Insert Enumeration",
     "description": "Fill cursors with enumeration",
     "publisher": "ZaikinDenis",
     "license": "MIT",
