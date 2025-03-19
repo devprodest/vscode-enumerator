@@ -1,3 +1,8 @@
+[![](https://vsmarketplacebadges.dev/version-short/ZaikinDenis.vscode-enumerator.svg)](https://marketplace.visualstudio.com/items?itemName=ZaikinDenis.vscode-enumerator)
+[![](https://vsmarketplacebadges.dev/downloads-short/ZaikinDenis.vscode-enumerator.svg)](https://marketplace.visualstudio.com/items?itemName=ZaikinDenis.vscode-enumerator)
+[![](https://vsmarketplacebadges.dev/rating-short/ZaikinDenis.vscode-enumerator.svg)](https://marketplace.visualstudio.com/items?itemName=ZaikinDenis.vscode-enumerator)
+![](https://img.shields.io/github/actions/workflow/status/devprodest/vscode-enumerator/webpack.yml)
+
 # ENUMERATOR
 
 ![alt text](img/icon128.png)
